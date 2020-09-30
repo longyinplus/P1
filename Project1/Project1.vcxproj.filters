@@ -42,5 +42,8 @@
     <ClCompile Include="3-绘图函数.cpp">
       <Filter>源文件\第三次课</Filter>
     </ClCompile>
+    <ClCompile Include="直方图.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
