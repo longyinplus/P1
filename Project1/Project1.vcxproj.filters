@@ -45,5 +45,8 @@
     <ClCompile Include="直方图.cpp">
       <Filter>源文件\第三次课</Filter>
     </ClCompile>
+    <ClCompile Include="彩色直方图.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
