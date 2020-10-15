@@ -19,11 +19,11 @@
     <Filter Include="源文件\第三次课">
       <UniqueIdentifier>{924643e6-9427-401c-9899-28c446697a5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第四次课">
+      <UniqueIdentifier>{351a320c-ead6-4a18-ab44-33db1f804d90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="练习.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -47,6 +47,18 @@
     </ClCompile>
     <ClCompile Include="彩色直方图.cpp">
       <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HSV-色域.cpp">
+      <Filter>源文件\第四次课</Filter>
+    </ClCompile>
+    <ClCompile Include="二值化.cpp">
+      <Filter>源文件\第四次课</Filter>
+    </ClCompile>
+    <ClCompile Include="滑动块.cpp">
+      <Filter>源文件\第四次课</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
