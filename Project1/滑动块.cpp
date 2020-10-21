@@ -39,7 +39,7 @@ int main()
 {
 	char key;
 	int a = 100, b = 15, c = 3;
-	srcImg = imread("E:\\opencv\\pictures\\HunAn.png", 0);
+	srcImg = imread("E:\\opencv\\pictures\\coins.png", 0);
 	threshold(srcImg, All_Result, All_Thre, 255, Erea_Type);
 	adaptiveThreshold(srcImg, Erea_Result, 255, All_Method, All_Type, 15, 3);
 	namedWindow("Trackbars", CV_WINDOW_NORMAL);
