@@ -6,21 +6,21 @@ using namespace cv;
 
 int main()
 {
-	Mat src_Img, Gray_Img, IO_Img, kernel, Close_Img, Labels, Stats, Centroids;
+	Mat src_Img, Gray_Img, IO_Img, kernel, OK_Img, Labels, Stats, Centroids;
 	Size size;
 	Point Start, End;
-	int  Count = 0, n;
-	size.height = 3;
-	size.width = 3;
-	src_Img = imread("E:\\opencv\\pictures\\coins.png");
+	int  Count = 0;
+	src_Img = imread("E:\\opencv\\pictures\\CLASS5-3.png");
 	cvtColor(src_Img, Gray_Img, CV_RGB2GRAY);
-	threshold(Gray_Img, IO_Img, 100, 255, THRESH_BINARY);
-	imshow("abab", IO_Img);
+	threshold(Gray_Img, IO_Img, 100, 255, THRESH_BINARY_INV);
+	imshow("二值化结果", IO_Img);
+	size.height = 21;
+	size.width = 21;
 	kernel = getStructuringElement(MORPH_RECT, size);
-	morphologyEx(IO_Img, Close_Img, MORPH_CLOSE, kernel);
-	imshow("闭运算", Close_Img);	//闭运算去除噪声
+	morphologyEx(IO_Img, OK_Img, MORPH_OPEN, kernel);
+	imshow("预处理结果", OK_Img);	//开运算去除线
 
-	connectedComponentsWithStats(Close_Img, Labels, Stats, Centroids, 8, CV_32S);
+	connectedComponentsWithStats(OK_Img, Labels, Stats, Centroids, 8, CV_32S);
 	for (int a = 0; a < Stats.rows; a++) {
 		long* data = Stats.ptr<long>(a);
 		if (data[4] < 10000) {		//太大的连通域肯定是背景

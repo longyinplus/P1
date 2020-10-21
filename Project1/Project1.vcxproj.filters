@@ -69,5 +69,11 @@
     <ClCompile Include="连通域标记.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
+    <ClCompile Include="DLC3.cpp">
+      <Filter>源文件\第五次课</Filter>
+    </ClCompile>
+    <ClCompile Include="DLC4.cpp">
+      <Filter>源文件\第五次课</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
