@@ -25,54 +25,69 @@
     <Filter Include="源文件\第五次课">
       <UniqueIdentifier>{746608d3-35f1-4fb0-8a64-bc70cef948a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第六次课">
+      <UniqueIdentifier>{82bf2a82-b70b-485c-85d9-a362f6810a23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="课堂练习1.cpp">
-      <Filter>源文件\第二次课</Filter>
-    </ClCompile>
-    <ClCompile Include="课堂练习2.cpp">
-      <Filter>源文件\第二次课</Filter>
-    </ClCompile>
-    <ClCompile Include="1.cpp">
-      <Filter>源文件\第三次课</Filter>
-    </ClCompile>
-    <ClCompile Include="2-读取视频图像.cpp">
-      <Filter>源文件\第三次课</Filter>
-    </ClCompile>
-    <ClCompile Include="3-绘图函数.cpp">
-      <Filter>源文件\第三次课</Filter>
-    </ClCompile>
-    <ClCompile Include="直方图.cpp">
-      <Filter>源文件\第三次课</Filter>
-    </ClCompile>
-    <ClCompile Include="彩色直方图.cpp">
-      <Filter>源文件\第三次课</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="HSV-色域.cpp">
+    <ClCompile Include="CLASS2\课堂练习1.cpp">
+      <Filter>源文件\第二次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS2\课堂练习2.cpp">
+      <Filter>源文件\第二次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS6\边缘检测.cpp">
+      <Filter>源文件\第六次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS6\均值滤波(高斯).cpp">
+      <Filter>源文件\第六次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS6\均值滤波.cpp">
+      <Filter>源文件\第六次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS6\中值滤波.cpp">
+      <Filter>源文件\第六次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS3\1.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS3\2-读取视频图像.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS3\3-绘图函数.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS3\彩色直方图.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS3\直方图.cpp">
+      <Filter>源文件\第三次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS4\HSV-色域.cpp">
       <Filter>源文件\第四次课</Filter>
     </ClCompile>
-    <ClCompile Include="二值化.cpp">
+    <ClCompile Include="CLASS4\二值化.cpp">
       <Filter>源文件\第四次课</Filter>
     </ClCompile>
-    <ClCompile Include="滑动块.cpp">
+    <ClCompile Include="CLASS4\滑动块.cpp">
       <Filter>源文件\第四次课</Filter>
     </ClCompile>
-    <ClCompile Include="图像形态学.cpp">
+    <ClCompile Include="CLASS5\DLC3.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
-    <ClCompile Include="连通域标记.cpp">
+    <ClCompile Include="CLASS5\DLC4.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
-    <ClCompile Include="DLC3.cpp">
+    <ClCompile Include="CLASS5\连通域标记.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
-    <ClCompile Include="DLC4.cpp">
+    <ClCompile Include="CLASS5\图像形态学.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
   </ItemGroup>

@@ -30,9 +30,10 @@ int main()
 			End.x = Start.x + data[2];
 			End.y = Start.y + data[3];
 			rectangle(src_Img, Start, End, CV_RGB(72, 142, 62), 3);
+			imshow("标记结果", src_Img);
+			waitKey(1);
 		}
 	}
-	imshow("标记结果", src_Img);
 	cout << "计数结果为:" << Count << endl;
 	waitKey(0);
 
