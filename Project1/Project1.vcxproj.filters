@@ -90,5 +90,8 @@
     <ClCompile Include="CLASS5\图像形态学.cpp">
       <Filter>源文件\第五次课</Filter>
     </ClCompile>
+    <ClCompile Include="CLASS6\DLC.cpp">
+      <Filter>源文件\第六次课</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
