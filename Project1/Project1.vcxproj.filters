@@ -28,6 +28,9 @@
     <Filter Include="源文件\第六次课">
       <UniqueIdentifier>{82bf2a82-b70b-485c-85d9-a362f6810a23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第七次课">
+      <UniqueIdentifier>{2392a9c7-6a52-4838-8732-fd77381b0ac6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -92,6 +95,21 @@
     </ClCompile>
     <ClCompile Include="CLASS6\DLC.cpp">
       <Filter>源文件\第六次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS7\Canny算子.cpp">
+      <Filter>源文件\第七次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS7\仿射变换.cpp">
+      <Filter>源文件\第七次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS7\投影变换.cpp">
+      <Filter>源文件\第七次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS7\图像矫正.cpp">
+      <Filter>源文件\第七次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS7\旋转及缩放.cpp">
+      <Filter>源文件\第七次课</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
