@@ -31,6 +31,9 @@
     <Filter Include="源文件\第七次课">
       <UniqueIdentifier>{2392a9c7-6a52-4838-8732-fd77381b0ac6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第八次课">
+      <UniqueIdentifier>{ec909d46-68c1-4722-9c39-e1a7ee43eea2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -110,6 +113,21 @@
     </ClCompile>
     <ClCompile Include="CLASS7\旋转及缩放.cpp">
       <Filter>源文件\第七次课</Filter>
+    </ClCompile>
+    <ClCompile Include="火焰是被.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="课堂作业处理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS8\Pratice1.cpp">
+      <Filter>源文件\第八次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS8\Pratice2.cpp">
+      <Filter>源文件\第八次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS8\Pratice3.cpp">
+      <Filter>源文件\第八次课</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
