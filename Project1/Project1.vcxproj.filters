@@ -34,6 +34,9 @@
     <Filter Include="源文件\第八次课">
       <UniqueIdentifier>{ec909d46-68c1-4722-9c39-e1a7ee43eea2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第九次课">
+      <UniqueIdentifier>{a1d16fc9-c2d9-41ca-9392-219cebd05e25}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -128,6 +131,18 @@
     </ClCompile>
     <ClCompile Include="CLASS8\Pratice3.cpp">
       <Filter>源文件\第八次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS9\1.cpp">
+      <Filter>源文件\第九次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS9\2.cpp">
+      <Filter>源文件\第九次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS9\3.cpp">
+      <Filter>源文件\第九次课</Filter>
+    </ClCompile>
+    <ClCompile Include="HSV阈值选择器.cpp">
+      <Filter>源文件\第九次课</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
