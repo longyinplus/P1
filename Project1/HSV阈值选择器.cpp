@@ -41,16 +41,22 @@ int main()
 	int i_minV = 0;
 	int i_maxV = 255;
 	char key;
-	namedWindow("TOOLS");
+	namedWindow("TOOLS", CV_WINDOW_NORMAL);
+	resizeWindow("TOOLS", 480, 240);
 	createTrackbar("minH", "TOOLS", &i_minH, 255, minH_cb);
 	createTrackbar("maxH", "TOOLS", &i_maxH, 255, maxH_cb);
 	createTrackbar("minS", "TOOLS", &i_minS, 255, minS_cb);
 	createTrackbar("maxS", "TOOLS", &i_maxS, 255, maxS_cb);
 	createTrackbar("minV", "TOOLS", &i_minV, 255, minV_cb);
 	createTrackbar("maxV", "TOOLS", &i_maxV, 255, maxV_cb);
-	src_Img = imread("E:\\opencv\\pictures\\apple.jpg");
+	src_Img = imread("E:\\opencv\\pictures\\apple-single.png");
 	namedWindow("SHOW", CV_WINDOW_NORMAL);
+	resizeWindow("SHOW", 320, 240);
 	namedWindow("SRC", CV_WINDOW_NORMAL);
+	resizeWindow("SRC", 320, 240);
+	inRange(src_Img, Scalar(i_minH, i_minS, i_minV), Scalar(i_maxH, i_maxS, i_maxV), HSV_Img);
+	imshow("SHOW", HSV_Img);
+	imshow("SRC", src_Img);
 	waitKey(1);
 	flag = 0;
 	while (1) {
@@ -60,7 +66,7 @@ int main()
 			imshow("SRC", src_Img);
 		}
 		key = waitKey(1);
-		if (key = ' ') break;
+		if (key == ' ') break;
 	}
 
 }
