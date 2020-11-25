@@ -17,8 +17,9 @@ int main()
 	while (1) {
 		ret = cap.read(frame);
 		if (ret) {
-			Sobel(frame, Border_x, CV_16SC1, 0, 1, 3);
-			Sobel(frame, Border_y, CV_16SC1, 1, 0, 5);
+			cvtColor(frame, frame, CV_BGR2GRAY);
+			Sobel(frame, Border_x, CV_16SC1, 0, 1, 1);
+			Sobel(frame, Border_y, CV_16SC1, 1, 0, 1);
 			convertScaleAbs(Border_x, Border_x2);
 		}
 		else {
