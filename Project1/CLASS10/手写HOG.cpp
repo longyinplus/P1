@@ -17,7 +17,6 @@ int Simple_Hog(Mat src_Img, float* List, int nAngle, int Size)
 
 	cartToPolar(Img_x, Img_y, mag, angle, true);	//得到这张图中每个像素点的方向和幅值
 
-
 	for (y = 0; y < ny; y++) {
 		for (x = 0; x < nx; x++) {
 			Mat roiImg, roiMag, roiAngle;

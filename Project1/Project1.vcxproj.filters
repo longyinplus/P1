@@ -40,6 +40,12 @@
     <Filter Include="源文件\第十次课">
       <UniqueIdentifier>{d58cd3fc-d51a-4a5e-aff2-962a68313d0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\DIP_EXAMPLE">
+      <UniqueIdentifier>{1f2f95d0-75dc-47d5-bcf8-73122e2a3b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第十一次课">
+      <UniqueIdentifier>{a0f55f3e-7ff3-48a5-8303-9a0607a0d60a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -150,5 +156,43 @@
     <ClCompile Include="CLASS10\手写HOG.cpp">
       <Filter>源文件\第十次课</Filter>
     </ClCompile>
+    <ClCompile Include="DIP_EXAMPLE\stdafx.cpp">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClCompile>
+    <ClCompile Include="DIP_EXAMPLE\dip-class.cpp">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClCompile>
+    <ClCompile Include="DIP_EXAMPLE\funtions-class.cpp">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS11\Dip-class-demos2.cpp">
+      <Filter>源文件\第十一次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS11\Funtions2.cpp">
+      <Filter>源文件\第十一次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS11\Stdafx2.cpp">
+      <Filter>源文件\第十一次课</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DIP_EXAMPLE\funtions.h">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClInclude>
+    <ClInclude Include="DIP_EXAMPLE\stdafx.h">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClInclude>
+    <ClInclude Include="DIP_EXAMPLE\targetver.h">
+      <Filter>源文件\DIP_EXAMPLE</Filter>
+    </ClInclude>
+    <ClInclude Include="CLASS11\Funtions2.h">
+      <Filter>源文件\第十一次课</Filter>
+    </ClInclude>
+    <ClInclude Include="CLASS11\Stdafx2.h">
+      <Filter>源文件\第十一次课</Filter>
+    </ClInclude>
+    <ClInclude Include="CLASS11\Targetver2.h">
+      <Filter>源文件\第十一次课</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
