@@ -5,10 +5,10 @@ using namespace std;
 using namespace cv;
 float Lammda = 0.5;
 int Track_Flag = 1;
-void Gamma(float* Input, float* Output, float Lammda)
+void Gamma(float* A, float Lammda)
 {
-	for (int n = 0; n < 255; n++) {
-		Output[n] = pow(Input[n], Lammda);
+	for (int n = 0; n < 256; n++) {
+		A[n] = pow((float)n / 255.0, Lammda);
 	}
 }
 
@@ -25,33 +25,24 @@ int main()
 	src = imread("E:\\opencv\\pictures\\Gamma_word.jpg");
 	int wight = src.cols, y, x, Track = 50;
 	int heigth = src.rows;
+	int flag = 0;
 	//归一化, 然后放到数组里
-	for (y = 0; y < heigth; y++) {
-		for (x = 0; x < wight; x++) { 
-			B_src[src.at<Vec3b>(y, x)[0]] = (float)src.at<Vec3b>(y, x)[0] / 255.0;
-			G_src[src.at<Vec3b>(y, x)[1]] = (float)src.at<Vec3b>(y, x)[1] / 255.0;
-			R_src[src.at<Vec3b>(y, x)[2]] = (float)src.at<Vec3b>(y, x)[2] / 255.0;
-
-		}
-	}
 	namedWindow("Tool");
 	createTrackbar("λ", "Tool", &Track, 200, GetLammda);
 	imshow("Killer", src);
 	while (1) {
 		if (Track_Flag) {
 			Mat result;
-			float B[256], G[256], R[256];
+			float F[256];
 			//进行Gamma处理
-			Gamma(B_src, B, Lammda);
-			Gamma(G_src, G, Lammda);
-			Gamma(R_src, R, Lammda);
+			Gamma(F, Lammda);
 			//再还原到0-255
 			src.copyTo(result);
 			for (y = 0; y < heigth; y++) {
 				for (x = 0; x < wight; x++) {
-					result.at<Vec3b>(y, x)[0] = ceil(B[result.at<Vec3b>(y, x)[0]] * 255.0);
-					result.at<Vec3b>(y, x)[1] = ceil(G[result.at<Vec3b>(y, x)[1]] * 255.0);
-					result.at<Vec3b>(y, x)[2] = ceil(R[result.at<Vec3b>(y, x)[2]] * 255.0);
+					result.at<Vec3b>(y, x)[0] = ceil(F[result.at<Vec3b>(y, x)[0]] * 255.0);
+					result.at<Vec3b>(y, x)[1] = ceil(F[result.at<Vec3b>(y, x)[1]] * 255.0);
+					result.at<Vec3b>(y, x)[2] = ceil(F[result.at<Vec3b>(y, x)[2]] * 255.0);
 				}
 			}
 			imshow("平静的生活", result);
