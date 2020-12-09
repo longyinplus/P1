@@ -46,6 +46,9 @@
     <Filter Include="源文件\第十一次课">
       <UniqueIdentifier>{a0f55f3e-7ff3-48a5-8303-9a0607a0d60a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第十二次课">
+      <UniqueIdentifier>{a0d4634b-4d9b-4ed3-997d-047ea2bf025d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -173,6 +176,15 @@
     </ClCompile>
     <ClCompile Include="CLASS11\Stdafx2.cpp">
       <Filter>源文件\第十一次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS12\Gamma矫正.cpp">
+      <Filter>源文件\第十二次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS12\曝光字.cpp">
+      <Filter>源文件\第十二次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS12\直方图均衡.cpp">
+      <Filter>源文件\第十二次课</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

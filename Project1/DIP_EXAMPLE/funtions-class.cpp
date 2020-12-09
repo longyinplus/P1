@@ -412,7 +412,7 @@ int ifftDemo()
 {
 	cv::Mat dst;
 
-	cv::Mat src = imread("E:\\opencv\\pictures\\lena.jpg", 0);
+	cv::Mat src = imread("E:\\opencv\\pictures\\Buliding_Last.png", 0);
 
 	int m = getOptimalDFTSize(src.rows); //2,3,5的倍数有更高效率的傅里叶变换
 	int n = getOptimalDFTSize(src.cols);
