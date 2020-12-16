@@ -21,6 +21,7 @@ int main()
 			Sobel(frame, Border_x, CV_16SC1, 0, 1, 1);
 			Sobel(frame, Border_y, CV_16SC1, 1, 0, 1);
 			convertScaleAbs(Border_x, Border_x2);
+			convertScaleAbs(Border_y, Border_y);
 		}
 		else {
 			cout << "¶ÁÈ¡Ö¡Í¼ÏñÊ§°Ü" << endl;

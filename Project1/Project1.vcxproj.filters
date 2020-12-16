@@ -13,41 +13,44 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\第二次课">
-      <UniqueIdentifier>{350af3a1-8c88-41ea-ae23-2518f926f2cf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第三次课">
-      <UniqueIdentifier>{924643e6-9427-401c-9899-28c446697a5d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第四次课">
-      <UniqueIdentifier>{351a320c-ead6-4a18-ab44-33db1f804d90}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第五次课">
-      <UniqueIdentifier>{746608d3-35f1-4fb0-8a64-bc70cef948a4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第六次课">
-      <UniqueIdentifier>{82bf2a82-b70b-485c-85d9-a362f6810a23}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第七次课">
-      <UniqueIdentifier>{2392a9c7-6a52-4838-8732-fd77381b0ac6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第八次课">
-      <UniqueIdentifier>{ec909d46-68c1-4722-9c39-e1a7ee43eea2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第九次课">
-      <UniqueIdentifier>{a1d16fc9-c2d9-41ca-9392-219cebd05e25}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\第十次课">
-      <UniqueIdentifier>{d58cd3fc-d51a-4a5e-aff2-962a68313d0c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="源文件\DIP_EXAMPLE">
       <UniqueIdentifier>{1f2f95d0-75dc-47d5-bcf8-73122e2a3b58}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\第十一次课">
+    <Filter Include="源文件\第8次课">
+      <UniqueIdentifier>{ec909d46-68c1-4722-9c39-e1a7ee43eea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第2次课">
+      <UniqueIdentifier>{350af3a1-8c88-41ea-ae23-2518f926f2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第9次课">
+      <UniqueIdentifier>{a1d16fc9-c2d9-41ca-9392-219cebd05e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第6次课">
+      <UniqueIdentifier>{82bf2a82-b70b-485c-85d9-a362f6810a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第7次课">
+      <UniqueIdentifier>{2392a9c7-6a52-4838-8732-fd77381b0ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第3次课">
+      <UniqueIdentifier>{924643e6-9427-401c-9899-28c446697a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第10次课">
+      <UniqueIdentifier>{d58cd3fc-d51a-4a5e-aff2-962a68313d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第12次课">
+      <UniqueIdentifier>{a0d4634b-4d9b-4ed3-997d-047ea2bf025d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第11次课">
       <UniqueIdentifier>{a0f55f3e-7ff3-48a5-8303-9a0607a0d60a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\第十二次课">
-      <UniqueIdentifier>{a0d4634b-4d9b-4ed3-997d-047ea2bf025d}</UniqueIdentifier>
+    <Filter Include="源文件\第4次课">
+      <UniqueIdentifier>{351a320c-ead6-4a18-ab44-33db1f804d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第5次课">
+      <UniqueIdentifier>{746608d3-35f1-4fb0-8a64-bc70cef948a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第13次课">
+      <UniqueIdentifier>{80fe5762-6975-46cf-b1e1-94cd90cf7883}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -58,76 +61,76 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CLASS2\课堂练习1.cpp">
-      <Filter>源文件\第二次课</Filter>
+      <Filter>源文件\第2次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS2\课堂练习2.cpp">
-      <Filter>源文件\第二次课</Filter>
+      <Filter>源文件\第2次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS6\边缘检测.cpp">
-      <Filter>源文件\第六次课</Filter>
+      <Filter>源文件\第6次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS6\均值滤波(高斯).cpp">
-      <Filter>源文件\第六次课</Filter>
+      <Filter>源文件\第6次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS6\均值滤波.cpp">
-      <Filter>源文件\第六次课</Filter>
+      <Filter>源文件\第6次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS6\中值滤波.cpp">
-      <Filter>源文件\第六次课</Filter>
+      <Filter>源文件\第6次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS3\1.cpp">
-      <Filter>源文件\第三次课</Filter>
+      <Filter>源文件\第3次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS3\2-读取视频图像.cpp">
-      <Filter>源文件\第三次课</Filter>
+      <Filter>源文件\第3次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS3\3-绘图函数.cpp">
-      <Filter>源文件\第三次课</Filter>
+      <Filter>源文件\第3次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS3\彩色直方图.cpp">
-      <Filter>源文件\第三次课</Filter>
+      <Filter>源文件\第3次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS3\直方图.cpp">
-      <Filter>源文件\第三次课</Filter>
+      <Filter>源文件\第3次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS4\HSV-色域.cpp">
-      <Filter>源文件\第四次课</Filter>
+      <Filter>源文件\第4次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS4\二值化.cpp">
-      <Filter>源文件\第四次课</Filter>
+      <Filter>源文件\第4次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS4\滑动块.cpp">
-      <Filter>源文件\第四次课</Filter>
+      <Filter>源文件\第4次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS5\DLC3.cpp">
-      <Filter>源文件\第五次课</Filter>
+      <Filter>源文件\第5次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS5\DLC4.cpp">
-      <Filter>源文件\第五次课</Filter>
+      <Filter>源文件\第5次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS5\连通域标记.cpp">
-      <Filter>源文件\第五次课</Filter>
+      <Filter>源文件\第5次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS5\图像形态学.cpp">
-      <Filter>源文件\第五次课</Filter>
+      <Filter>源文件\第5次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS6\DLC.cpp">
-      <Filter>源文件\第六次课</Filter>
+      <Filter>源文件\第6次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS7\Canny算子.cpp">
-      <Filter>源文件\第七次课</Filter>
+      <Filter>源文件\第7次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS7\仿射变换.cpp">
-      <Filter>源文件\第七次课</Filter>
+      <Filter>源文件\第7次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS7\投影变换.cpp">
-      <Filter>源文件\第七次课</Filter>
+      <Filter>源文件\第7次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS7\图像矫正.cpp">
-      <Filter>源文件\第七次课</Filter>
+      <Filter>源文件\第7次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS7\旋转及缩放.cpp">
-      <Filter>源文件\第七次课</Filter>
+      <Filter>源文件\第7次课</Filter>
     </ClCompile>
     <ClCompile Include="火焰是被.cpp">
       <Filter>源文件</Filter>
@@ -136,28 +139,28 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CLASS8\Pratice1.cpp">
-      <Filter>源文件\第八次课</Filter>
+      <Filter>源文件\第8次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS8\Pratice2.cpp">
-      <Filter>源文件\第八次课</Filter>
+      <Filter>源文件\第8次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS8\Pratice3.cpp">
-      <Filter>源文件\第八次课</Filter>
+      <Filter>源文件\第8次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS9\1.cpp">
-      <Filter>源文件\第九次课</Filter>
+      <Filter>源文件\第9次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS9\2.cpp">
-      <Filter>源文件\第九次课</Filter>
+      <Filter>源文件\第9次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS9\3.cpp">
-      <Filter>源文件\第九次课</Filter>
+      <Filter>源文件\第9次课</Filter>
     </ClCompile>
     <ClCompile Include="HSV阈值选择器.cpp">
-      <Filter>源文件\第九次课</Filter>
+      <Filter>源文件\第9次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS10\手写HOG.cpp">
-      <Filter>源文件\第十次课</Filter>
+      <Filter>源文件\第10次课</Filter>
     </ClCompile>
     <ClCompile Include="DIP_EXAMPLE\stdafx.cpp">
       <Filter>源文件\DIP_EXAMPLE</Filter>
@@ -169,22 +172,28 @@
       <Filter>源文件\DIP_EXAMPLE</Filter>
     </ClCompile>
     <ClCompile Include="CLASS11\Dip-class-demos2.cpp">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS11\Funtions2.cpp">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS11\Stdafx2.cpp">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS12\Gamma矫正.cpp">
-      <Filter>源文件\第十二次课</Filter>
+      <Filter>源文件\第12次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS12\曝光字.cpp">
-      <Filter>源文件\第十二次课</Filter>
+      <Filter>源文件\第12次课</Filter>
     </ClCompile>
     <ClCompile Include="CLASS12\直方图均衡.cpp">
-      <Filter>源文件\第十二次课</Filter>
+      <Filter>源文件\第12次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS13\背景差分.cpp">
+      <Filter>源文件\第13次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS13\验证像素变换是否符合高斯.cpp">
+      <Filter>源文件\第13次课</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -198,13 +207,13 @@
       <Filter>源文件\DIP_EXAMPLE</Filter>
     </ClInclude>
     <ClInclude Include="CLASS11\Funtions2.h">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClInclude>
     <ClInclude Include="CLASS11\Stdafx2.h">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClInclude>
     <ClInclude Include="CLASS11\Targetver2.h">
-      <Filter>源文件\第十一次课</Filter>
+      <Filter>源文件\第11次课</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
