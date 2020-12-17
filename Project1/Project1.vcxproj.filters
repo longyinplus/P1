@@ -195,6 +195,9 @@
     <ClCompile Include="CLASS13\验证像素变换是否符合高斯.cpp">
       <Filter>源文件\第13次课</Filter>
     </ClCompile>
+    <ClCompile Include="CLASS13\高斯建模及背景差分.cpp">
+      <Filter>源文件\第13次课</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DIP_EXAMPLE\funtions.h">

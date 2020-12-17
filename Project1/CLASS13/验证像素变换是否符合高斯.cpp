@@ -1,9 +1,15 @@
 #include<iostream>
 #include<opencv2/opencv.hpp>
+#include<stdlib.h>
+
+#define Step			1
+#define N				400
+#define Frame_width		320
+#define Frame_height	240
+
 using namespace std;
 using namespace cv;
 
-#define Step	0.1
 
 int Select_x = 0;
 int Select_y = 0;
@@ -23,14 +29,27 @@ int main()
 	VideoCapture cap;
 	Mat frame;
 	Mat Show(240, 512, CV_8UC3, Scalar(255, 255, 255));
+	Point Text_start, Text_end, Line_start, Line_end;
+	Size ReImgSiz;
 	float Table[512] = { 0 };
+	int step = 0, sum = 0;
 	cap.open(0);
 	namedWindow("Video", WINDOW_NORMAL);
 	namedWindow("show", WINDOW_AUTOSIZE);
 	setMouseCallback("Video", onMouse);
 	imshow("show", Show);
+	ReImgSiz.width = Frame_width;
+	ReImgSiz.height = Frame_height;
+	Text_start.x = Frame_width / 2 - 50;
+	Text_start.y = 10;
+	Text_end.x = Frame_width / 2 + 55;
+	Text_end.y = 10;
+	Line_start.x = Text_start.x + 5;
+	Line_start.y = 8;
+	Line_end.y =8;
 	while (cap.isOpened()) {
 		bool ret = cap.read(frame);
+		resize(frame, frame, ReImgSiz, INTER_LINEAR);
 		if (ret) {
 			if (CallBack_Flag == 0) {						//如果已经选好点了
 				Mat gray;
@@ -47,13 +66,32 @@ int main()
 						End.y = 0;
 					line(Show, Start, End, Scalar(86, 156, 214), 2);
 				}
-				circle(frame, Point(Select_x, Select_y), 5, Scalar(214, 157, 133), -1);
+				circle(frame, Point(Select_x, Select_y), 3, Scalar(214, 157, 133), -1);
+				putText(frame, "<", Text_start, FONT_HERSHEY_SIMPLEX, 0.3, Scalar(50, 0, 255), 2);
+				Line_end.x = Line_start.x + step / (N / 100);
+				line(frame, Line_start, Line_end, Scalar(255, 0, 50), 2);
+				putText(frame, ">", Text_end, FONT_HERSHEY_SIMPLEX, 0.3, Scalar(50, 0, 255), 2);
 				imshow("show", Show);
+				step++;
 			}
 			imshow("Video", frame);
 			char key = waitKey(1);
 			if (key == ' ') break;
+			if (step == N) break;
 		}
 	}
+	for (int n = 0; n < 256; n++) {
+		sum += Table[n] * n;
+	}
+	int L = sum / N;
+	sum = 0;
+	for (int n = 0; n < 256; n++) {
+		sum += ((n - L) * (n - L)) * Table[n];
+	}
+	int A = ceil(sum / N);
+	cout << L << endl << A << endl;
+	cout << step << endl;
+	cout << frame.cols << frame.rows << endl;
 	destroyAllWindows();
+	system("pause"); 
 }

@@ -9,7 +9,7 @@ int main()
 	VideoCapture cap;
 	Mat frame, Background, subMat, Binary_Img;
 	bool ret = 0;
-	cap.open("E:\\opencv\\movies\\killer.mp4");
+	cap.open("C:\\Users\\97008\\Videos\\Captures\\World 2020-11-05 19-51-58.mp4");
 	while (!ret)
 		ret = cap.read(Background);		//读取第一帧图像作为背景
 	cvtColor(Background, Background, COLOR_BGR2GRAY);

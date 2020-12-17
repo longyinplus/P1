@@ -24,6 +24,7 @@ int main()
 		}
 		char key = waitKey(30);
 		if (key == 'q') break;
+		std::cout << Frame.cols << std::endl << Frame.rows;
 	}
 	return 1;
 }
