@@ -52,6 +52,9 @@
     <Filter Include="源文件\第13次课">
       <UniqueIdentifier>{80fe5762-6975-46cf-b1e1-94cd90cf7883}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第14次课">
+      <UniqueIdentifier>{9632ef90-8333-4a62-9d8f-d553e19f675b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -197,6 +200,18 @@
     </ClCompile>
     <ClCompile Include="CLASS13\高斯建模及背景差分.cpp">
       <Filter>源文件\第13次课</Filter>
+    </ClCompile>
+    <ClCompile Include="甲方乙方交换章.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="源6.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS14\模板匹配.cpp">
+      <Filter>源文件\第14次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS14\手写HOG模板匹配.cpp">
+      <Filter>源文件\第14次课</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

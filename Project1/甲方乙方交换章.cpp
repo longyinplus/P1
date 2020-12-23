@@ -18,42 +18,51 @@ void GetLammda(int a, void* dat)
 	Track_Flag = 1;
 }
 
+void GetThreshold(int a, void* dat)
+{
+	Track_Flag = 1;
+}
+
 int main()
 {
 	Mat src;
 	float B_src[256], G_src[256], R_src[256];
 	src = imread("E:\\opencv\\pictures\\Trash.jpg");
-	int wight = src.cols, y, x, Track = 50;
+	int wight = src.cols, y, x, Track = 50, Threshold = 100;
 	int heigth = src.rows;
 	int flag = 0;
 	//归一化, 然后放到数组里
 	namedWindow("Tool");
-	createTrackbar("λ", "Tool", &Track, 200, GetLammda);
-	imshow("Killer", src);
 	namedWindow("平静的生活", WINDOW_NORMAL);
+	namedWindow("平静的生活2", WINDOW_NORMAL);
+	namedWindow("平静的生活Red", WINDOW_NORMAL);
+	createTrackbar("λ", "Tool", &Track, 500, GetLammda);
+	createTrackbar("Threshold", "Tool", &Threshold, 255, GetThreshold);
+	imshow("Killer", src);
 	while (1) {
-		Mat result;
 		if (Track_Flag) {
+			Mat Big_result, Thr_result;
+			vector<Mat> channel;
 			float F[256];
 			//进行Gamma处理
 			Gamma(F, Lammda);
 			//再还原到0-255
-			src.copyTo(result);
+			src.copyTo(Big_result);
 			for (y = 0; y < heigth; y++) {
 				for (x = 0; x < wight; x++) {
-					result.at<Vec3b>(y, x)[0] = ceil(F[result.at<Vec3b>(y, x)[0]] * 255.0);
-					result.at<Vec3b>(y, x)[1] = ceil(F[result.at<Vec3b>(y, x)[1]] * 255.0);
-					result.at<Vec3b>(y, x)[2] = ceil(F[result.at<Vec3b>(y, x)[2]] * 255.0);
+					Big_result.at<Vec3b>(y, x)[2] = ceil(F[Big_result.at<Vec3b>(y, x)[2]] * 255.0);
 				}
 			}
-			imshow("平静的生活", result);
+			split(Big_result, channel);
+			threshold(channel[2], Thr_result, Threshold, 255, 0);
+			imshow("平静的生活Red", channel[2]);
+			imshow("平静的生活", Big_result);
+			imshow("平静的生活2", Thr_result);
 			Track_Flag = 0;
-		} 
-		char key = waitKey(50);
-		if (key == ' ') {
-			imwrite("OKTrash.jpg", result);
-			break;
 		}
+		char key = waitKey(50);
+		if (key == ' ')
+			break;
 	}
 	waitKey(0);
 	return 0;

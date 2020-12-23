@@ -25,8 +25,8 @@ int Simple_Hog(Mat src_Img, float* List, int nAngle, int Size)
 			roiMag = mag(roi);
 			roiAngle = angle(roi);
 			int Start = (x * nx + y) * nAngle;
-			//float step = 360 / nAngle;	//角度区域的大小
-			float step = 2.0 / (float)nAngle;
+			float step = 360 / nAngle;	//角度区域的大小
+			//float step = 2.0 / (float)nAngle;
 			for (int n = 0; n < roiImg.rows; n++) {
 				float* Data_angle = roiAngle.ptr<float>(n);
 				float* Data_mag = roiMag.ptr<float>(n);
