@@ -1,6 +1,5 @@
 ﻿#include "stdafx.h"
-#include "funtions.h"
-#include "parameters.h"
+#include "green_funtions.h"
 
 int createMaskByKmeans(cv::Mat src, cv::Mat& mask);
 
@@ -17,18 +16,11 @@ VideoCapture createInput(bool useCamera, std::string videoPath)
 	return capVideo;
 }
 
-void segColor()
+void segColor(Mat src, Mat* Output)
 {
 
-	Mat src= imread("C:\\Users\\97008\\Documents\\Tencent Files\\970084858\\FileRecv\\dip-class-demos\\testImages\\movie.jpg");
-
-	Mat mask = Mat::zeros(src.size(), CV_8UC1);
-	createMaskByKmeans(src,mask);
-
-	imshow("src",src);
-	imshow("mask",mask);
-
-	waitKey(0);
+	//Mat Output = Mat::zeros(src.size(), CV_8UC1);
+	createMaskByKmeans(src, *Output);
 
 }
 
@@ -116,7 +108,6 @@ int createMaskByKmeans(cv::Mat src, cv::Mat & mask)
 	int clusterCount = rng.uniform(2, MAX_CLUSTERS + 1);
 	Mat labels;
 	Mat centers;
-	clusterCount = 5;
 	//制作kmeans用的数据
 	Mat sampleData = src.reshape(3, pixNum);
 	Mat km_data;
