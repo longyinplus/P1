@@ -55,6 +55,12 @@
     <Filter Include="源文件\第14次课">
       <UniqueIdentifier>{9632ef90-8333-4a62-9d8f-d553e19f675b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第15次课">
+      <UniqueIdentifier>{56d65da8-034a-4afd-895a-740fe929bccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\kMeans_sample">
+      <UniqueIdentifier>{4f23ae89-64e9-4074-9396-a155d5209c13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -213,6 +219,15 @@
     <ClCompile Include="CLASS14\手写HOG模板匹配.cpp">
       <Filter>源文件\第14次课</Filter>
     </ClCompile>
+    <ClCompile Include="kMeans_sample\dip-class-demos.cpp">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClCompile>
+    <ClCompile Include="kMeans_sample\funtions.cpp">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClCompile>
+    <ClCompile Include="kMeans_sample\stdafx.cpp">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DIP_EXAMPLE\funtions.h">
@@ -232,6 +247,18 @@
     </ClInclude>
     <ClInclude Include="CLASS11\Targetver2.h">
       <Filter>源文件\第11次课</Filter>
+    </ClInclude>
+    <ClInclude Include="kMeans_sample\funtions.h">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClInclude>
+    <ClInclude Include="kMeans_sample\parameters.h">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClInclude>
+    <ClInclude Include="kMeans_sample\stdafx.h">
+      <Filter>源文件\kMeans_sample</Filter>
+    </ClInclude>
+    <ClInclude Include="kMeans_sample\targetver.h">
+      <Filter>源文件\kMeans_sample</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
