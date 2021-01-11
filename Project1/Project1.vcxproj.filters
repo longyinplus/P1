@@ -61,6 +61,9 @@
     <Filter Include="源文件\kMeans_sample">
       <UniqueIdentifier>{4f23ae89-64e9-4074-9396-a155d5209c13}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\第16次课">
+      <UniqueIdentifier>{3caf37ab-114b-4ef5-8b0b-2996002634fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="练习.cpp">
@@ -231,6 +234,15 @@
     <ClCompile Include="kMeans_sample\demo_funtions.cpp">
       <Filter>源文件\kMeans_sample</Filter>
     </ClCompile>
+    <ClCompile Include="大作业(附加).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS16\Class16_demo.cpp">
+      <Filter>源文件\第16次课</Filter>
+    </ClCompile>
+    <ClCompile Include="CLASS16\Class16_funtions.cpp">
+      <Filter>源文件\第16次课</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DIP_EXAMPLE\funtions.h">
@@ -256,6 +268,12 @@
     </ClInclude>
     <ClInclude Include="kMeans_sample\demo_funtions.h">
       <Filter>源文件\kMeans_sample</Filter>
+    </ClInclude>
+    <ClInclude Include="CLASS16\Class16_funtions.h">
+      <Filter>源文件\第16次课</Filter>
+    </ClInclude>
+    <ClInclude Include="CLASS16\Class16_parameter.h">
+      <Filter>源文件\第16次课</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
